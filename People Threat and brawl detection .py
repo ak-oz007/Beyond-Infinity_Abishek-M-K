@@ -14,11 +14,9 @@ Nature = {'anger' : 0,'threat' : 0,'fight' :0,'OK-OK' : 0,'normal': 0}
 
 
 thresh = 0.50 # Threshold to detect object
-# cap = cv2.VideoCapture("D:\\AEEE_THINGS\\Sem_5\\Projects\\Hackathon\\code\\video\\video\\51_9_4.avi")
-#cap = cv2.VideoCapture("D:\\AEEE_THINGS\\Sem_5\\Projects\\Hackathon\\code\\video\\video\\52_9_0.avi")
-#cap = cv2.VideoCapture("D:\\AEEE_THINGS\\Sem_5\\Projects\\Hackathon\\code\\video\\video\\_I_ll_Just_Wave_My_Hand__sung_by_Cornerstone_Male_Choir_wave_u_cm_np1_fr_med_0.avi")
-cap = cv2.VideoCapture("D:\\AEEE_THINGS\\Sem_5\\Projects\\Hackathon\\code\\video\\A_Beautiful_Mind_4_stand_f_cm_np1_fr_med_13.avi")
-#cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("video\\_I_ll_Just_Wave_My_Hand__sung_by_Cornerstone_Male_Choir_wave_u_cm_np1_fr_med_0.avi")
+# cap = cv2.VideoCapture("video\\A_Beautiful_Mind_4_stand_f_cm_np1_fr_med_13.avi")
+# cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
 
