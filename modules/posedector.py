@@ -14,6 +14,8 @@ def posedetector(cap):
             # Recoloring the image for mediapipe to work
             image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             image.flags.writeable = False
+            fourcc = cv2.VideoWriter_fourcc('X', 'V', 'I', 'D')
+            out = cv2.VideoWriter("Final Output.avi", fourcc, 5.0, (1280, 720))
 
             # Making  the  detecion
             results = pose.process(image)
@@ -34,6 +36,8 @@ def posedetector(cap):
                                       mp_drawing.DrawingSpec(color=(245, 117, 66), thickness=2, circle_radius=2),
                                       mp_drawing.DrawingSpec(color=(245, 66, 230), thickness=2, circle_radius=2)
                                       )
+            # imj = cv2.resize(image, (320, 480))
+            out.write(image)
             # cv2.imshow('Mediapipe Feed!',image)
             cv2.imshow('Mediapipe Pose', cv2.flip(image, 1))
 
